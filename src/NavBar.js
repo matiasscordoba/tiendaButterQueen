@@ -1,13 +1,16 @@
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
+import './NavBar.css';
+import CartWidget from './CartWidget';
 
 function NavBar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
-        <a href="#" className="navbar-brand">
-            <img src={logo} alt="Butter Queen logo" width="30" height="24"
-            className="d-inline-block align-top"
+        <div className="container">
+        <a href="#" className="navbar-brand titulo-font">
+            <img src={logo} alt="Butter Queen logo" width="50" height="45"
+            className="d-inline-block align-center me-2"
             ></img>
-            Butter Queen</a>
+            BUTTER QUEEN</a>
         <button
             className="navbar-toggler"
             type="button"
@@ -22,15 +25,16 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="toggleMobileMenu">
             <ul className="navbar-nav ml-auto text-center">
                 <li>
-                    <a className="nav-link" href="#">Seccion 1</a>
+                    <a className="nav-link pt-3" href="#">Seccion 1</a>
                 </li>
                 <li>
-                    <a className="nav-link" href="#">Seccion 2</a>
+                    <a className="nav-link pt-3" href="#">Seccion 2</a>
                 </li>
                 <li>
-                    <a className="nav-link" href="#">Seccion 3</a>
+                    <a className="nav-link pt-2" href="#"><CartWidget/></a>
                 </li>
             </ul>
+        </div>
         </div>
          </nav>
     );
