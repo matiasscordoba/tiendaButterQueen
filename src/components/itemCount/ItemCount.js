@@ -20,20 +20,16 @@ const ItemCount = ({initial, stock, onAdd}) => {
     }
 
     return (
-        <div className="card col-md-6 col-lg-3">
-            <div className="card-body">
-                <h5 className="card-title">Producto </h5>
-                <p className="card-text">Descripción del Producto</p>
-                <div className="d-flex align-items-center justify-content-center mb-1">
+                <div>
+                    <div className="d-flex align-items-center justify-content-center mb-1">
                     <i className="bi bi-dash-square counter-button" onClick={restItems}></i>
                     <span className="counter-amount text-center">{items}</span>
                     <i className="bi bi-plus-square counter-button" onClick={addItems}></i>
-                </div>
+                    </div>
                 <button className="btn btn-secondary w-100" onClick={() => onAdd(items)}>
                     Agregar
                 </button>
-            </div>
-        </div>
+                </div>
     )
 }
 

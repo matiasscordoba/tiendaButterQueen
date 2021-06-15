@@ -8,7 +8,6 @@ function App() {
         <NavBar/>
           <div className="container">
             <main>
-              <h1>Hola mundo</h1>
               <ItemListContainer/>
             </main>
           </div>
